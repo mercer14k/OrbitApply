@@ -1,0 +1,9 @@
+streamlit>=1.63,<2
+pydantic>=2.10,<3
+python-docx>=1.1,<2
+PyMuPDF>=1.25,<2
+pandas>=2.2,<3
+python-jobspy>=1.1.80,<2
+beautifulsoup4>=4.12,<5
+reportlab>=4.2,<5
+playwright>=1.50,<2
