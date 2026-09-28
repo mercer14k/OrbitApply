@@ -1,0 +1,11 @@
+{
+  "name": "orbitapply-artwork",
+  "version": "0.17.0",
+  "private": true,
+  "description": "Developer-only build for bundled local Three.js artwork; end users do not need Node.js.",
+  "scripts": {
+    "build:artwork": "esbuild jobtailor/assets/landing.js --bundle --format=esm --minify --target=es2020 --outfile=jobtailor/assets/landing.bundle.js --legal-comments=inline"
+  },
+  "dependencies": {"three": "0.180.0"},
+  "devDependencies": {"esbuild": "0.25.10"}
+}

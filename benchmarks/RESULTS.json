@@ -1,0 +1,50 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux",
+  "samples_per_schema": 200,
+  "baseline": "Same messages and full schema, already compact JSON. No artificially padded baseline.",
+  "protected_source_bytes_unchanged": true,
+  "schema_results": [
+    {
+      "schema": "EvidenceDecision",
+      "before_payload_characters": 1143,
+      "after_payload_characters": 1058,
+      "payload_character_reduction_pct": 7.44,
+      "estimated_input_token_reduction": 28,
+      "median_compaction_ms": 0.0268
+    },
+    {
+      "schema": "ClaimDraft",
+      "before_payload_characters": 838,
+      "after_payload_characters": 802,
+      "payload_character_reduction_pct": 4.3,
+      "estimated_input_token_reduction": 12,
+      "median_compaction_ms": 0.0158
+    },
+    {
+      "schema": "ClaimReview",
+      "before_payload_characters": 1514,
+      "after_payload_characters": 1314,
+      "payload_character_reduction_pct": 13.21,
+      "estimated_input_token_reduction": 67,
+      "median_compaction_ms": 0.0398
+    },
+    {
+      "schema": "RequirementBatch",
+      "before_payload_characters": 1062,
+      "after_payload_characters": 959,
+      "payload_character_reduction_pct": 9.7,
+      "estimated_input_token_reduction": 34,
+      "median_compaction_ms": 0.037
+    }
+  ],
+  "format_only_example": {
+    "pretty_json_chars": 3798,
+    "compact_json_chars": 2153,
+    "round_trip_equal": true
+  },
+  "model_calls": 0,
+  "measured_token_savings": null,
+  "measured_inference_speedup": null,
+  "limitations": "Synthetic payload fixtures, not paired model runs. Character estimates exclude provider framing. No inference quality or hardware throughput claim."
+}
